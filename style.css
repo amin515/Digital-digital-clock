@@ -29,6 +29,7 @@
     top: 34%;
     left: 50%;
     color: #fff;
+    font-family: clock;
 }
 .hours {
     position: absolute;
@@ -66,11 +67,16 @@ div#s h2{
     
     font-size: 60px;
 }
-i.fas.fa-heart {
+.amin {
     position: absolute;
     top: 41%;
     left: 249px;
     color: red;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 i {
     color: red;
@@ -107,10 +113,12 @@ p#amp {
     font-size: 12px;
     left: 65px;
     font-family: clock;
+    color: #03f3f7;
 }
 h2#h {
     font-size: 72px;
     font-family: clock;
+    color: #03f3f7;
 }
 div#m {
     font-size: 60px;

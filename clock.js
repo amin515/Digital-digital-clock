@@ -14,6 +14,8 @@ const thur = document.querySelector('#thur');
 const fri = document.querySelector('#fri');
 const sat = document.querySelector('#sat');
 const amp = document.querySelector('#amp');
+const p_m = document.querySelector('#p-m');
+const p_s = document.querySelector('#p-s');
 
 
 setInterval(function () {
@@ -27,9 +29,12 @@ setInterval(function () {
     let ampm = hh > 12 ? 'PM': 'AM'
 
 
-    console.log(day1);
+
     s.innerHTML = `${ss > 9 ? ss : '0'+ ss}`
+    p_s.innerHTML = 'sec';
+
     m.innerHTML = `${mm > 9 ? mm : '0'+ mm}`
+    p_m.innerHTML = 'min'
     h.innerHTML = zero(date.getHours() > 12 ? date.getHours() - 12 : date.getHours());
     amp.innerHTML = `${ampm}`
    
@@ -41,12 +46,6 @@ setInterval(function () {
     
     
     sun.innerHTML = `${task(date.getDay())}`
-    // mon.innerHTML = `${task(date.getDay(index))}`
-    // tues.innerHTML = `${task(date.getDay(index))}`
-    // wed.innerHTML = `${task(date.getDay(index))}`
-    // thur.innerHTML = `${task(date.getDay(index))}`
-    // fri.innerHTML = `${task(date.getDay(index))}`
-    // sat.innerHTML = `${task(date.getDay(index))}`
  
 }, 1000);
 
