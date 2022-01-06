@@ -37,14 +37,10 @@ setInterval(function () {
     p_m.innerHTML = 'min'
     h.innerHTML = zero(date.getHours() > 12 ? date.getHours() - 12 : date.getHours());
     amp.innerHTML = `${ampm}`
-   
 
     day.innerHTML = `${day1 > 9 ? day1 : '0'+ day1}`;
     month.innerHTML = `${month1 > 9 ? month1 : '0'+ month1}`;
     year.innerHTML = `${year1}`;
-
-    
-    
     sun.innerHTML = `${task(date.getDay())}`
  
 }, 1000);

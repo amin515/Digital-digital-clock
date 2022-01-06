@@ -107,6 +107,7 @@ span#battery {
 span#battery {
     width: 16%;
 }
+
 p#amp {
     position: relative;
     top: -39px;
