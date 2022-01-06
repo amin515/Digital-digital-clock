@@ -41,7 +41,7 @@ setInterval(function () {
     day.innerHTML = `${day1 > 9 ? day1 : '0'+ day1}`;
     month.innerHTML = `${month1 > 9 ? month1 : '0'+ month1}`;
     year.innerHTML = `${year1}`;
-    sun.innerHTML = `${task(date.getDay())}`
+    week1.innerHTML = `${day_Cal(date.getDay())}`
  
 }, 1000);
 
